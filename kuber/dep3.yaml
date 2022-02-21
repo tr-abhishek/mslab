@@ -1,0 +1,9 @@
+q3.>
+
+kubectl run usn-nginx1 --image=nginx --restart=Never --labels=app=usn-v1
+kubectl run usn-nginx2 --image=nginx --restart=Never --labels=app=usn-v1
+kubectl run usn-nginx3 --image=nginx --restart=Never --labels=app=usn-v1
+
+kubectl get pods --show-labels
+kubectl get pods -l app=usn-v1
+kubectl label pods usn-nginx1 usn-nginx2 usn-nginx3 app-

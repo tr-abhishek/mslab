@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usn-nginx-deployment
+  labels:
+    app: usn-nginx
+spec:
+  replicas: 3
+  selector:
+    matchLables:
+      app: usn-nginx
+  template:
+    metadata:
+      labels:
+        app: usn-nginx
+    spec:
+      containers:
+      - name: nginx
+        image: 172.1.14.168:5001/nginx
+        ports:
+        - containerPort: 80
+
+kubectl apply -f dep1.yaml
+kubectl get pods | grep usn-nginx-deployment
+kubectl expose deployment usn-nginx-deployment --type=NodePort --name=usn-nginx-service
+
+kubectl port-forward deployment/usn-nginx-deployment 9000:21111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
