@@ -1,4 +1,5 @@
 q4->
+- Create a Pod with ubuntu image and a command to echo “YOUR_NAME” which overrides the default CMD/ENTRYPOINT of the image.
 
 apiVersion: v1
 kind: Pod
