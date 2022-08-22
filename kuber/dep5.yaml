@@ -1,4 +1,7 @@
 q5->
+- Create a Pod that runs one container. The configuration file for the Pod defines a command and arguments by using environment variables:
+
+
 apiVersion: v1
 kind: Pod
 metadata:
