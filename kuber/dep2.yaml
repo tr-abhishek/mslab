@@ -1,5 +1,7 @@
 q2.
 
+- Demonstrate the updation of image in live container in a pod using command line as well as by updating yaml files
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
