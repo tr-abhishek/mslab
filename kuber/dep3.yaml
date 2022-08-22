@@ -1,5 +1,11 @@
 q3.>
 
+- Perform the following.
+  a. Create 3 pods with names nginx1, nginx2,nginx3. All of them should have the label app=v1 Show all labels of the pods.
+  b. Get only the 'app=v2' pods.
+  c. Remove the 'app' label from the pods we created before
+  
+
 kubectl run usn-nginx1 --image=nginx --restart=Never --labels=app=usn-v1
 kubectl run usn-nginx2 --image=nginx --restart=Never --labels=app=usn-v1
 kubectl run usn-nginx3 --image=nginx --restart=Never --labels=app=usn-v1
