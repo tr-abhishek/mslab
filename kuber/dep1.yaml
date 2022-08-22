@@ -1,3 +1,7 @@
+q1->
+
+- Create a simple deployment of the given app with name of your choice and 3 replicas of pods. Check the status of pod by sending request. App should be accessed from outside the cluster. Use Port Forwarding to Access Applications in a Cluster.
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
